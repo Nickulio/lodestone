@@ -1428,6 +1428,7 @@ function centerText(t, y, size, col) {
 
 
 function drawHUD() {
+  ctx.save(); ctx.translate(3, 3); ctx.scale(0.8, 0.8); ctx.translate(-4, -4);
   panel(4, 4, 178, 30);
   text('objective', 9, 8, 5, '#d8a84a');
   ctx.font = `5px ${FONT}`;
@@ -1436,6 +1437,7 @@ function drawHUD() {
   for (let i = 0; i < 6; i++) drawGear(13 + i * 14, 44, 4, i < stage ? '#f0c050' : '#4a3e30', i < stage ? time * 2 : 0);
   panel(93, 37, 40, 15);
   text(`? ${notes.size}/${NOTE_COUNT}`, 98, 42, 5, '#bcd8ff');
+  ctx.restore();
   const tstr = STAGES[stage].time;
   ctx.font = `5px ${FONT}`;
   const tw = ctx.measureText(tstr).width;
