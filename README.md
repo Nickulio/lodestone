@@ -1,6 +1,6 @@
 # LODESTONE — a little hackathon story
 
-*Made at SBUHacks 2026 (theme: Steel & Steam) by Nick.*
+*Made at SBUHacks 2026 (theme: Steel & Steam). I designed it, coded it, and made the music myself.*
 
 A cozy pixel-art RPG about a duck in a top hat who learns how real projects get made.
 
